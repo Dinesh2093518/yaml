@@ -1,0 +1,2 @@
+[windows_servers]
+Target1 ansible_host=20.0.4.5 ansible_connection=winrm ansible_user=TCAdmin2 ansible_password=1234P@ssword1234 ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm

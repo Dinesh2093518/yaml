@@ -1,0 +1,11 @@
+- name: Install Facets Interactive
+  hosts: windows_servers
+  tasks:
+          - name: Install MS SQL ODBC & CMD line utils
+            win_chocolatey:
+                    name: sqlserver-odbcdriver, sqlserver-cmdlineutils
+                    state: present
+
+
+          - name: Install Facets Interactive
+            win_command: C:\Facets_Interactive\Packages\FacetsInteractiveInstall.bat
